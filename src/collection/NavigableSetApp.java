@@ -1,5 +1,6 @@
 package collection;
 
+import java.util.Collections;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -27,5 +28,8 @@ public class NavigableSetApp {
         for (var name : rifqi) {
             System.out.println(name);
         }
+
+        NavigableSet<String> immutable = Collections.unmodifiableNavigableSet(names);
+        // immutable.add("Add new data"); // ERROR : can not modify immutable set
     }
 }
