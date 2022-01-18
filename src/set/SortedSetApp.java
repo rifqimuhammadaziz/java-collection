@@ -1,3 +1,5 @@
+package set;
+
 import data.Person;
 import data.PersonComparator;
 
